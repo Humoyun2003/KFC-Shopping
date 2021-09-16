@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 0 0px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #017143;
+}
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 31px 20px;
+}
+header ul li a:hover {
+    background-color: #9deccb;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+    padding-left: 100px;
+}
+.content .textBox h2 {
+    color: #333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.content .textBox h2 span {
+    color: #017143;
+    font-size: 1.1em;
+    font-weight: 900;
+}
+.content .textBox p {
+    color: #333;
+}
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #333;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 2px solid #017143;
+}
+.content .textBox a:hover {
+    background: #9deccb;
+}
+.content .imgBox, .content .imgBox-coffee, .content .imgBox-drink {
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(-25deg);
+    top: 80px;
+    padding-right: 120px;
+}
+.content .imgBox-drink {
+    padding-right: 180px;
+}
+.content .imgBox-coffee {
+    padding-right: 150px;
+}
+.content .imgBox img {
+    width: 210px;
+}
+.content .imgBox-coffee img {
+    width: 210px;
+}
+.content .imgBox-drink img {
+    width: 110px;
+}
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.thumb li img {
+    max-height: 100px;
+    transform: rotate(-20deg);
+    transition: all 0.4s ease-in-out;
+}
+.thumb li img:hover {
+    position: relative;
+    transform: translateY(-25px);
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.8);
+}
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+.active {
+    background-color: #017143;
+}
